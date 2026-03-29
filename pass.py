@@ -18,7 +18,7 @@ def extract_features(password):
     return [length, upper, lower, digits, special]
 
 # -----------------------------
-# Dataset
+#           Dataset
 # -----------------------------
 data = [
     ("12345", 0), ("password", 0), ("admin123", 0),
@@ -28,27 +28,27 @@ data = [
     ("qwerty", 0), ("Hello123", 1)
 ]
 
-X = [extract_features(pwd) for pwd, _ in data]
-y = [label for _, label in data]
+X_list = [extract_features(pwd) for pwd, _ in data]
+y_list = [label for _, label in data]
 
-X = np.array(X)
-y = np.array(y)
+X = np.array(X_list)
+y = np.array(y_list)
 
 # -----------------------------
-# Train-Test Split
+#       Train-Test Split
 # -----------------------------
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
 
 # -----------------------------
-# Train Model
+#      Training the Model
 # -----------------------------
 model = RandomForestClassifier()
 model.fit(X_train, y_train)
 
 # -----------------------------
-# Streamlit UI
+#         Streamlit UI
 # -----------------------------
 st.set_page_config(page_title="Password Analyzer", page_icon="🔐")
 
@@ -80,7 +80,7 @@ if st.button("🚀 Analyze Password"):
         status_text.text("Analysis Complete ✅")
 
         # -----------------------------
-        # Prediction
+        #          Prediction
         # -----------------------------
         features = np.array([extract_features(password)])
         prediction = model.predict(features)[0]
