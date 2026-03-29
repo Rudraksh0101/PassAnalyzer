@@ -43,13 +43,9 @@ An AI-enabled web application that evaluates password strength using a machine l
 
 ## ▶️ How to Run the Project
 
-### 1. Clone the repository
 ```bash
 git clone https://github.com/Rudraksh0101/PassAnalyzer.git
 cd password-analyzer
 ls
 python3 pass.py
 
-### 2. Visual Studio Code
-```windows
-streamlit run pass.py
