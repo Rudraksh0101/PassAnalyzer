@@ -1,4 +1,5 @@
 # 🔐 AI-Based Password Security Analyzer
+Created by Rudra Kumar Sharma
 
 An AI-enabled web application that evaluates password strength using a machine learning model and generates a secure SHA-256 hash.
 
