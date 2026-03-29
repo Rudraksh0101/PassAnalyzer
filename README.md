@@ -44,5 +44,5 @@ An AI-enabled web application that evaluates password strength using a machine l
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/Rudra7439/password-analyzer.git
+git clone https://github.com/Rudra7439/TestProject.git
 cd password-analyzer
