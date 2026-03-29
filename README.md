@@ -47,3 +47,5 @@ An AI-enabled web application that evaluates password strength using a machine l
 ```bash
 git clone https://github.com/Rudraksh0101/PassAnalyzer.git
 cd password-analyzer
+ls
+python3 pass.py
