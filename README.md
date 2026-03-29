@@ -49,3 +49,7 @@ git clone https://github.com/Rudraksh0101/PassAnalyzer.git
 cd password-analyzer
 ls
 python3 pass.py
+
+### 2. Visual Studio Code
+```windows
+streamlit run pass.py
